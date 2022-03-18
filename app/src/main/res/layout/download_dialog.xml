@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/dark_blue"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="کیفیت بالا"
+                    android:textColor="@color/light_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="320 Kb"
+                    android:textColor="@color/light_gray"
+                    android:textSize="16sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"/>
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_baseline_get_app_24"
+                    app:tint="#22B128" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/dark_blue"
+            app:cardCornerRadius="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="کیفیت متوسط"
+                    android:textColor="@color/light_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="128 Kb"
+                    android:textColor="@color/light_gray"
+                    android:textSize="16sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"/>
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_baseline_get_app_24"
+                    app:tint="#22B128" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/dark_blue"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="کیفیت پائین"
+                    android:textColor="@color/light_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="60 Kb"
+                    android:textColor="@color/light_gray"
+                    android:textSize="16sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"/>
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_baseline_get_app_24"
+                    app:tint="#22B128" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

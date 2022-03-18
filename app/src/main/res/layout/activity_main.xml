@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/dark_blue"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_login"
+        android:layout_marginEnd="12dp"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:id="@+id/login_linear_layout">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColorHint="@color/light_gray"
+            app:hintTextColor="@color/light_gray"
+            app:boxStrokeColor="@color/light_gray"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="نام کاربری"
+                android:id="@+id/user_name"
+                android:textSize="16sp"
+                android:textColor="@color/light_gray"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColorHint="@color/light_gray"
+            app:hintTextColor="@color/light_gray"
+            app:boxStrokeColor="@color/light_gray"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/light_gray"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:hint="رمز عبور"
+                android:textSize="16sp"
+                android:textColor="@color/light_gray"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColorHint="@color/light_gray"
+            app:hintTextColor="@color/light_gray"
+            app:boxStrokeColor="@color/light_gray"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:id="@+id/phone_number"
+                android:hint="شماره همراه"
+                android:textColor="@color/light_gray"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="مرا به خاطر بسپار"
+            android:textColor="@color/light_gray"
+            android:layoutDirection="ltr"
+            android:layout_marginTop="4dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ثبت نام"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_register_button"
+            android:layout_marginTop="8dp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/arrow_btn"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:layout_gravity="end"
+            android:layout_marginTop="12dp"
+            android:padding="8dp"
+            android:background="@drawable/bg_arrow_btn"
+            app:tint="@color/light_gray"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
